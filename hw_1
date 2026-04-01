@@ -1,0 +1,10 @@
+INSERT INTO college library (id, title, author, price, genre) VALUES
+(1, 'The Great Gatsby', 'F. Scott Fitzgerald', 500, 'Fiction'),
+(2, 'A Brief History of Time', 'Stephen Hawking', 650, 'Science'),
+(3, 'Sapiens', 'Yuval Noah Harari', 700, 'History'),
+(4, 'Angels and Demons', 'Dan Brown', 450, 'Fiction'),
+(5, 'The Alchemist', 'Paulo Coelho', 350, 'Fiction');
+SELECT * FROM `college library` WHERE price >400;
+SELECT * FROM `college library` WHERE genre IN ('History','Fiction','Science');
+SELECT * FROM `college library`WHERE title = 'The Great Gatsby';
+SELECT * FROM `college library` WHERE author <> 'Dan Brown';
