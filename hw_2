@@ -1,0 +1,9 @@
+INSERT INTO college library (id, title, author, price, stock_status, genre) VALUES
+(1, 'The Great Gatsby', 'F. Scott Fitzgerald', 500,'yes' 'Fiction'),
+(2, 'A Brief History of Time', 'Stephen Hawking', 650,'no' 'Science'),
+(3, 'Sapiens', 'Yuval Noah Harari', 700,'yes' 'History'),
+(4, 'Angels and Demons', 'Dan Brown', 450,'no' 'Fiction'),
+(5, 'The Alchemist', 'Paulo Coelho', 350,'no' 'Fiction');
+SELECT DISTINCT genre FROM `bookstore`;
+SELECT * FROM `bookstore` WHERE stock_status='yes'AND price < 400;
+SELECT * FROM `bookstore` WHERE stock_status='no'AND price > 700;
